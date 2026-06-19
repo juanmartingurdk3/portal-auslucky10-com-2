@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>澳洲幸运10 · 稳定入口与产品说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fbe9d7 0%, #f5d6b8 50%, #ecc4a1 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      line-height: 1.7;
+      color: #3d2c1b;
+    }
+
+    .card {
+      max-width: 920px;
+      width: 100%;
+      background: #fffcf7;
+      border-radius: 36px;
+      padding: 3rem 2.8rem;
+      box-shadow: 0 20px 40px -10px rgba(120, 70, 30, 0.25), 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 28px 50px -14px rgba(110, 60, 20, 0.3);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #6b3f1c;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    h1 small {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #ad7a52;
+      background: #f3e3d3;
+      padding: 0.2rem 1rem;
+      border-radius: 100px;
+      letter-spacing: 0.3px;
+    }
+
+    .subhead {
+      font-size: 1rem;
+      color: #8f6a45;
+      margin-bottom: 2rem;
+      border-left: 4px solid #dba77b;
+      padding-left: 1.2rem;
+    }
+
+    .hero-text {
+      font-size: 1.1rem;
+      background: #fcf3ea;
+      padding: 1.6rem 1.8rem;
+      border-radius: 24px;
+      margin: 1.8rem 0 2.2rem 0;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .hero-text strong {
+      color: #854f27;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 2rem;
+      margin: 2.2rem 0 2rem;
+    }
+
+    .feature-item {
+      background: #f8efe6;
+      border-radius: 24px;
+      padding: 1.4rem 1.5rem;
+      transition: transform 0.15s ease, background 0.2s;
+    }
+
+    .feature-item:hover {
+      background: #f3e5d8;
+      transform: translateY(-2px);
+    }
+
+    .feature-item h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #5f391b;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+      color: #4d3624;
+      margin: 0;
+    }
+
+    .usage-note {
+      background: #faf0e6;
+      border-radius: 24px;
+      padding: 1.8rem 2rem;
+      margin: 1.8rem 0 2.2rem;
+    }
+
+    .usage-note h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #613d1f;
+      margin-bottom: 0.75rem;
+    }
+
+    .usage-note ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .usage-note li {
+      padding-left: 1.6rem;
+      position: relative;
+      font-size: 0.98rem;
+      color: #3f2e1d;
+    }
+
+    .usage-note li::before {
+      content: "•";
+      color: #b58259;
+      font-weight: bold;
+      position: absolute;
+      left: 2px;
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .faq-mini {
+      margin: 2.5rem 0 2rem;
+      border-top: 1px solid #ecdccc;
+      padding-top: 2rem;
+    }
+
+    .faq-mini details {
+      margin-bottom: 0.6rem;
+      border-radius: 20px;
+      padding: 0.6rem 1.2rem;
+      background: #f8f0e7;
+      transition: background 0.2s;
+    }
+
+    .faq-mini details[open] {
+      background: #f2e4d6;
+    }
+
+    .faq-mini summary {
+      font-weight: 500;
+      color: #5b391e;
+      cursor: pointer;
+      padding: 0.2rem 0;
+      font-size: 0.98rem;
+    }
+
+    .faq-mini details p {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 0.92rem;
+      color: #4f3823;
+      padding-left: 0.4rem;
+    }
+
+    .link-sentence {
+      background: #e9d9c9;
+      border-radius: 100px;
+      padding: 0.6rem 1.8rem;
+      display: inline-block;
+      margin-top: 0.6rem;
+      font-size: 1rem;
+    }
+
+    .link-sentence a {
+      color: #6b3f1c;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 2px solid #dba77b;
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .link-sentence a:hover {
+      border-bottom-color: #854f27;
+      color: #552f12;
+    }
+
+    .footnote {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: #8b6e53;
+      text-align: center;
+      border-top: 1px solid #eadccc;
+      padding-top: 1.8rem;
+      letter-spacing: 0.3px;
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        padding: 2rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .hero-text {
+        padding: 1.2rem 1.2rem;
+        font-size: 1rem;
+      }
+
+      .usage-note {
+        padding: 1.2rem 1.2rem;
+      }
+
+      .link-sentence {
+        display: block;
+        text-align: center;
+        border-radius: 40px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      h1 small {
+        display: block;
+        margin-top: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+  <h1>
+    澳洲幸运10
+    <small>产品说明 · 稳定入口</small>
+  </h1>
+  <div class="subhead">从清晰入口到日常使用，一份温和而完整的介绍</div>
+
+  <div class="hero-text">
+    <strong>澳洲幸运10</strong> 是一款基于数字排列的娱乐型开奖游戏，以其固定的开奖节奏和简洁的规则受到许多用户的关注。
+    我们始终建议将其视为一种休闲选择，而非投资工具。本页面旨在提供产品的基本面貌、使用场景以及稳定、直接的访问方式，帮助你快速了解并顺畅使用。
+  </div>
+
+  <h2 style="font-size:1.2rem; font-weight:500; color:#613d1f; margin-bottom:0.2rem;">✨ 产品亮点</h2>
+  <div class="feature-grid">
+    <div class="feature-item">
+      <h3>⏱ 固定周期</h3>
+      <p>每数分钟一期，节奏均衡，适合碎片时间参与，无需长时间等待。</p>
+    </div>
+    <div class="feature-item">
+      <h3>📊 数字区间</h3>
+      <p>从1至10的数字中开出多个号码，组合简明，易于观察趋势。</p>
+    </div>
+    <div class="feature-item">
+      <h3>🔄 多形态对照</h3>
+      <p>支持多种常见玩法格式，可依据个人偏好选择对应的参考方式。</p>
+    </div>
+    <div class="feature-item">
+      <h3>🧭 统一入口</h3>
+      <p>通过一个稳定的链接即可进入，避免四处寻找不同地址，省心省力。</p>
+    </div>
+  </div>
+
+  <div class="usage-note">
+    <h2>📌 使用建议与场景</h2>
+    <ul>
+      <li><strong>日常浏览：</strong> 在休息间隙打开 <a href="https://portal-auslucky10.com" style="color:#6b3f1c; font-weight:600; text-decoration:underline; text-underline-offset:3px; text-decoration-color:#dba77b;">澳洲幸运10</a> 页面，快速查看最近几期号码，不必耗费过多精力。</li>
+      <li><strong>规律观察：</strong> 如果你对数字分布感兴趣，可以连续记录若干期，寻找自己理解的模式——但请记住所有开奖均为独立随机事件。</li>
+      <li><strong>理性参与：</strong> 设置时间与预算上限，不因连续结果而冲动。享受过程比结果更重要。</li>
+      <li><strong>信息核对：</strong> 如需核对历史开奖，建议以该页面展示为准，减少信息混杂带来的困惑。</li>
+    </ul>
+  </div>
+
+  <div class="faq-mini">
+    <h2 style="font-size:1.2rem; font-weight:500; color:#613d1f; margin-bottom:0.8rem;">❓ 常见疑问摘要</h2>
+    <details>
+      <summary>澳洲幸运10是官方彩票吗？</summary>
+      <p>它属于数字娱乐型游戏，由相关运营方提供。请以当地法规为准，我们不做超出产品本身的定性。</p>
+    </details>
+    <details>
+      <summary>页面内的数据实时吗？</summary>
+      <p>是的，依托稳定的数据对接，开奖后页面会尽快同步更新。但网络延迟可能导致极短时间的差异，可稍作刷新。</p>
+    </details>
+    <details>
+      <summary>移动端访问是否方便？</summary>
+      <p>页面已针对手机屏幕做适配，卡片化布局在手机上同样清晰，无需额外缩放。</p>
+    </details>
+    <details>
+      <summary>如何保持访问稳定？</summary>
+      <p>直接使用提供的链接即可，建议添加至浏览器书签，避免通过非官方渠道跳转。</p>
+    </details>
+  </div>
+
+  <div style="text-align:center; margin: 2rem 0 0.5rem;">
+    <span class="link-sentence">
+      前往 <a href="https://portal-auslucky10.com">澳洲幸运10</a> 页面开始浏览
+    </span>
+  </div>
+
+  <div class="footnote">
+    温和提示：娱乐有度，量力而行。本页仅为产品介绍，不构成任何诱导或承诺。
+  </div>
+</div>
+</body>
+</html>
